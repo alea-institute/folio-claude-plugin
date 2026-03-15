@@ -1,0 +1,10 @@
+{
+  "name": "folio",
+  "version": "0.1.0",
+  "description": "FOLIO Legal Ontology — search and browse 18,000+ legal concepts via MCP",
+  "author": "ALEA Institute",
+  "homepage": "https://openlegalstandard.org/",
+  "repository": "https://github.com/alea-institute/folio-claude-plugin",
+  "license": "MIT",
+  "keywords": ["legal", "ontology", "law", "folio", "classification"]
+}

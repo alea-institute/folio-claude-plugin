@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "folio": {
+      "command": "uvx",
+      "args": ["folio-mcp"]
+    }
+  }
+}
