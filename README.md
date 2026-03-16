@@ -6,14 +6,6 @@ A [Claude Code](https://claude.com/claude-code) plugin that provides access to [
 
 ## Installation
 
-### From the Claude Code Plugin Registry
-
-```bash
-claude plugin add folio
-```
-
-### Manual Installation
-
 Add to your project's `.mcp.json`:
 
 ```json
