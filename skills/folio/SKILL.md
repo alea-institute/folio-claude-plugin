@@ -18,12 +18,14 @@ Use the FOLIO MCP tools when you need to:
 
 ## How to Search
 
-Follow this 4-step workflow:
+Follow this workflow:
 
 1. **Search by name**: Start with `search_concepts(query)` to find concepts by label
 2. **Refine by definition**: If name search is too broad, use `search_definitions(query)`
-3. **Browse branches**: Use `list_branches()` then `get_taxonomy_branch(branch_name)` to explore a category
-4. **Navigate hierarchy**: Use `get_children(iri)` and `get_parents(iri)` to explore up/down the taxonomy
+3. **Advanced query**: Use `query_concepts(label, definition, branch, parent)` for composable filters
+4. **Query properties**: Use `query_properties(label, definition, domain, range)` to find relationships
+5. **Browse branches**: Use `list_branches()` then `get_taxonomy_branch(branch_name)` to explore a category
+6. **Navigate hierarchy**: Use `get_children(iri)` and `get_parents(iri)` to explore up/down the taxonomy
 
 ## Branch Reference
 
