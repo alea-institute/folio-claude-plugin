@@ -59,7 +59,17 @@ Requires Python 3.10+ and [uv](https://docs.astral.sh/uv/) installed. The `uvx f
 | `get_properties` | List all OWL object properties |
 | `find_connections` | Find semantic connections between concepts |
 
-All responses include full concept data: translations (31% of concepts, 10+ languages), preferred labels, external identifiers, alternative labels, cross-references, and more.
+Browse operations return compact summaries. Use `get_concept(iri)` for full details including translations (31% of concepts, 10+ languages), preferred labels, external identifiers, and cross-references.
+
+## Prompts
+
+Reusable prompt templates that guide Claude through classification workflows:
+
+| Prompt | Description | Argument |
+|---|---|---|
+| `classify-document` | Classify a legal document against the FOLIO taxonomy | `description` |
+| `identify-area-of-law` | Identify applicable areas of law for a situation | `situation` |
+| `classify-entity` | Classify a legal entity (person, org, role) | `entity` |
 
 ## Resources
 
