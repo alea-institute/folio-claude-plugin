@@ -6,7 +6,15 @@ A [Claude Code](https://claude.com/claude-code) plugin that provides access to [
 
 ## Installation
 
-Add to your project's `.mcp.json`:
+> **Plugin marketplace:** This plugin has been submitted to the [official Claude Code plugin marketplace](https://github.com/anthropics/claude-plugins-official) and is under review. Once approved, install with `/plugin install folio`.
+
+The quickest way to add FOLIO to Claude Code:
+
+```bash
+claude mcp add folio -- uvx folio-mcp
+```
+
+Or add to your project's `.mcp.json`:
 
 ```json
 {
@@ -50,6 +58,18 @@ Requires Python 3.10+ and [uv](https://docs.astral.sh/uv/) installed. The `uvx f
 | `get_parents` | Get parent concepts |
 | `get_properties` | List all OWL object properties |
 | `find_connections` | Find semantic connections between concepts |
+
+All responses include full concept data: translations (31% of concepts, 10+ languages), preferred labels, external identifiers, alternative labels, cross-references, and more.
+
+## Resources
+
+The server exposes MCP resources for direct context access:
+
+| Resource | Description |
+|---|---|
+| `folio://branches` | Index of all 24 taxonomy branches |
+| `folio://stats` | Ontology statistics |
+| `folio://branch/{name}` | Top-level concepts in a branch (on-demand) |
 
 ## Usage Examples
 
